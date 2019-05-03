@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Do You Love Me</p>
+<button id="demo" onclick="doyoulovemeyes()">yes</button>
+<button  id="demon" style="left: auto;top: auto;position: absolute;" onmouseover= "doyoulovemeno()">no</button>
+        <script>
+        function doyoulovemeyes() {
+            document.getElementById("demo").innerHTML = "Yes. you are right  ";
+        }
+        function doyoulovemeno() {
+            let hoverleft = Math.random()*window.innerWidth;
+             let hovertop = Math.round(Math.random()*window.innerHeight);
+            document.getElementById("demon").style.left = hoverleft + "px";
+            document.getElementById("demon").style.top = hovertop + "px";
+        }
+</script>
+</body>
+</html>
